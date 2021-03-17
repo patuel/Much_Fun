@@ -1,6 +1,9 @@
 version: "3.9"
 services:
   app:
-    build: .
+    # build: .
+    image: nginx:alpine
     ports:
       - 80:80
+    volumes: 
+      - ./www:/usr/share/nginx/html
