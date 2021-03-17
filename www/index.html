@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>:'D</title>
+        <!-- <meta name="color-scheme" content="dark light"> -->
+        <script src="animation.js" defer></script>
+
+        <style>
+            :root {
+                color-scheme: light dark; /* both supported */
+            }
+
+            body {
+                margin: 0; 
+                padding: 0;
+                overflow: hidden;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background: #333;   
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <canvas></canvas>
+    </body>
+</html>
